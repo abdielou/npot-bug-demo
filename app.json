@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "sdkVersion": "25.0.0",
+    "packagerOpts": {
+      "sourceExts": ["ts", "tsx"],
+      "assetExts": [
+        "dae",
+        "obj",
+        "mtl",
+        "amf",
+        "3mf",
+        "3ds",
+        "jpg",
+        "assimp",
+        "fbx",
+        "pmd",
+        "vmd",
+        "ply",
+        "stl",
+        "vtk",
+        "vtp",
+        "babylon",
+        "drc",
+        "pcd",
+        "pack",
+        "bvh",
+        "x"
+      ],
+      "transformer": "node_modules/react-native-typescript-transformer/index.js"
+    }
+  }
+}
