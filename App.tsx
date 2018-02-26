@@ -70,17 +70,17 @@ export default class App extends React.Component<{}> {
 
   getBody = async () => {
     const model = {
-      'B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins_Body_D.png': require('./models/batman/B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins_Body_D.png'),
-      'B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.mtl': require('./models/batman/B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.mtl'),
-      //'B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins_Body_D.npot.png': require('./models/batman/B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins_Body_D.npot.png'),
-      //'B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.npot.mtl': require('./models/batman/B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.npot.mtl'),
+      // 'B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins_Body_D.png': require('./models/batman/B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins_Body_D.png'),
+      // 'B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.mtl': require('./models/batman/B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.mtl'),
+      'B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins_Body_D.npot.png': require('./models/batman/B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins_Body_D.npot.png'),
+      'B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.npot.mtl': require('./models/batman/B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.npot.mtl'),
       'B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.obj': require('./models/batman/B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.obj'),
     };
 
     const mesh = await ExpoTHREE.loadAsync(
       [
-        model['B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.mtl'],
-        //model['B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.npot.mtl'],
+        // model['B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.mtl'],
+        model['B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.npot.mtl'],
         model['B-AO_iOS_HERO_Bruce_Wayne_Batman_Arkham_Origins.obj'],
       ],
       () => { },
